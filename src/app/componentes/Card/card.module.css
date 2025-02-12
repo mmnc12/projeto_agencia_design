@@ -1,0 +1,28 @@
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 70px 30px;
+  text-align: left;
+
+  .titulo {
+    gap: 5px;
+    & span {
+      font-size: 16px;
+    }
+
+    & h3 {
+      font-size: 24px;
+    }
+
+    & small {
+      font-size: 24px;
+    }
+
+  }
+
+  & p {
+    font-size: 16px;
+  }
+}

@@ -1,15 +1,8 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import Rodape from "./componentes/Rodape";
+import SecaoBanner from "./componentes/SecaoBanner";
+import SecaoExperienciaTrabalho from "./componentes/SecaoExperienciaTrabalho";
+import Topo from "./componentes/Topo";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -18,8 +11,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="pt-br">
+      <body>
+        <Topo />
+        <SecaoBanner />
+        <SecaoExperienciaTrabalho />
+        <Rodape />
         {children}
       </body>
     </html>

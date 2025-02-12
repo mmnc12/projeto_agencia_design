@@ -1,0 +1,46 @@
+.rodape {
+  width: 100%;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.conteudo_rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo_paragrafo {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.imagens {
+  max-width: 375px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.img {
+  width: 45px;
+  height: 45px;
+}
+
+.autor {
+  padding: 20px 0px;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+}
