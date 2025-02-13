@@ -35,5 +35,51 @@
 
   & span {
     font-weight: bold;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .titulo {
+    & h2 {
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .titulo {
+    & h2 {
+      width: 370px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 40vh;
+    & .fundo {
+      display: none;
+    }
+
+    & .titulo {
+      width: 100%;
+      & h2 {
+        width: 600px;
+      }
+    }
+  }
+}
+
+@media (max-width: 429px) {
+  .banner {
+    height: 50vh;
+
+    & .titulo {
+      width: 100%;
+      & h2 {
+        width: 300px !important; 
+      }
+    }
   }
 }

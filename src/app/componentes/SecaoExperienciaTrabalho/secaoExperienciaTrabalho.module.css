@@ -17,6 +17,7 @@
   
        & h1 {
          color: #32333c;
+         font-size: 45px;
        }
 
        & small {
@@ -27,6 +28,7 @@
   
        & p {
          color: #8a8fa3;
+         font-size: 18px;
        }
      }
   
@@ -57,6 +59,7 @@
 
     & h1 {
       color: #cccccc;
+      font-size: 45px;
     }
 
     & small {
@@ -67,10 +70,31 @@
 
     & p {
       color: #cccccc;
+      font-size: 18px;
     }
   }
 
   .cards {
     max-width: 1024px;
     display: flex;
+  }
+
+  @media (max-width: 1920px) {
+    
+  }
+  
+  @media (max-width: 1024px) {
+    
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 429px) {
+    .cards {
+      flex-direction: column;
+    }
   }

@@ -32,3 +32,16 @@
   background-color: #feb633;
   cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 429px) {
+  .card {
+    width: 100%;
+  }
+}
