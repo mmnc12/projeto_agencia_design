@@ -1,11 +1,12 @@
 import Card from "../Card";
 import estilos from "./secaoExperienciaTrabalho.module.css";
 
-export default function SecaoExperienciaTrabalho() {
+export default function SecaoExperienciaTrabalho(props) {
   return (
-    <section className={estilos.experiencia_trabalho}>
+    <section className={props.mudarFundoDaPagina ? estilos['experiencia_trabalho-dark'] : estilos['experiencia_trabalho-light']}>
       <div className={estilos.titulo_descricao}>
         <h1>Experiências De Trabalho</h1>
+        <small></small>
         <p>Há mais de 10 anos no mercado de Branding,     Desing Gráfico, Criação de
           Sites e Marketing Digital, nos empenhamos diariamente para entregar
           resultados que tragam impacto aos nossos clientes.

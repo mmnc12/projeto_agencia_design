@@ -6,3 +6,13 @@
   box-sizing: border-box;
   font-family: "Poppins", serif;
 }
+
+.bg-light {
+  background-color: #fafbfc;
+  color: #000000;
+}
+
+.bg-dark {
+  background-color: #252525;
+  color: #cccccc;
+}

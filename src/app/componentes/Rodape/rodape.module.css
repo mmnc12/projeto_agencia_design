@@ -38,9 +38,26 @@
   height: 45px;
 }
 
-.autor {
+.autor-light {
   padding: 20px 0px;
   text-align: center;
   bottom: 0;
   position: absolute;
+
+  width: 100%;
+  border-top: 1px solid #cccccc;
+}
+
+.autor-dark {
+  padding: 20px 0px;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+
+  width: 100%;
+  border-top: 1px solid #747272;
+
+  & span {
+    color: #feb633;
+  }
 }

@@ -11,7 +11,7 @@
   height: 35px;
 }
 
-.btn {
+.btn-light {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,12 +21,35 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  border: none;
+  border: 1px solid #022144;
   cursor: pointer;
-}
 
-.icon {
+  & .icon {
   object-fit: cover;
   width: 25px;
   height: 25px;
+  background-color: #ffffff;
 }
+}
+
+.btn-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border:1px solid #ffffff;
+  cursor: pointer;
+
+  & .icon {
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+    background-color: #252525;
+  }
+}
+

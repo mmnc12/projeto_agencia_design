@@ -5,21 +5,15 @@ import Image from 'next/image';
 import logo from '../../../../public/logo.png';
 import sun from '../../../../public/sun.png';
 import moon from '../../../../public/moon.png';
+import SecaoExperienciaTrabalho from '../SecaoExperienciaTrabalho';
 
-export default function Topo() {
-
-  const [mudarFundoDaPagina, setMudarFundoDaPagina] = useState(false);
-
-
-  function mudarCorFundo() {
-    setMudarFundoDaPagina(!mudarFundoDaPagina);
-  }
+export default function Topo(props) {
 
   return (
     <header className={estilos.header}>
       <Image className={estilos.Image} src={logo} alt='logo' />
-      <button onClick={mudarCorFundo} className={estilos.btn}>
-        {mudarFundoDaPagina ? <Image className={estilos.icon} src={sun} alt='sol' /> : <Image className={estilos.icon} src={moon} alt='lua' />}
+      <button onClick={props.mudarCorFundo} className={props.mudarFundoDaPagina ? estilos['btn-dark'] : estilos['btn-light'] }>
+        {props.mudarFundoDaPagina ? <Image className={estilos.icon} src={sun} alt='sol' /> : <Image className={estilos.icon} src={moon} alt='lua' />}
       </button>
     </header>
   )

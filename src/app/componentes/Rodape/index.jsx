@@ -8,7 +8,7 @@ import dribble from "../../../../public/dribble.png";
 import behance from "../../../../public/behance.png";
 import google from "../../../../public/google.png";
 
-export default function Rodape() {
+export default function Rodape(props) {
   return (
     <footer className={estilos.rodape}>
       <div className={estilos.conteudo_rodape}>
@@ -25,7 +25,7 @@ export default function Rodape() {
           <Image className={estilos.img} src={behance} alt="behance" />
           <Image className={estilos.img} src={google} alt="google" />
         </div>
-        <div className={estilos.autor}>
+        <div className={props.mudarFundoDAPagina ? estilos['autor-light'] : estilos['autor-dark']}>
           <p>Copyright 2022 <span>Manoel Mecias do Nascimento</span></p>
         </div>
       </div>
