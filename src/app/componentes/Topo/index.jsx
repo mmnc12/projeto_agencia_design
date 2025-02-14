@@ -10,7 +10,7 @@ import SecaoExperienciaTrabalho from '../SecaoExperienciaTrabalho';
 export default function Topo(props) {
 
   return (
-    <header className={estilos.header}>
+    <header className={props.mudarFundoDaPagina ? estilos.header_dark : estilos.header_light}>
       <Image className={estilos.Image} src={logo} alt='logo' />
       <button onClick={props.mudarCorFundo} className={props.mudarFundoDaPagina ? estilos['btn-dark'] : estilos['btn-light'] }>
         {props.mudarFundoDaPagina ? <Image className={estilos.icon} src={sun} alt='sol' /> : <Image className={estilos.icon} src={moon} alt='lua' />}
