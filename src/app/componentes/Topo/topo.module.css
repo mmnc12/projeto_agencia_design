@@ -4,6 +4,7 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -18,11 +19,12 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   z-index: 1;
   background-color: #252525;
-  object-fit: cover;
+  overflow: hidden;
 }
 
 .img {
@@ -42,6 +44,7 @@
   position: relative;
   border: 1px solid #022144;
   cursor: pointer;
+  object-fit: cover;
 
   & .icon {
     object-fit: cover;
